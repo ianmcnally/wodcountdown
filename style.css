@@ -1,0 +1,79 @@
+@font-face {
+  font-family: 'segment';
+  src: url('https://cdn.glitch.com/0be53e97-364b-4858-830c-69857dfb6ae4%2FSegment7Standard.otf?v=1605044766203')
+    format('opentype'),
+    url('https://cdn.glitch.com/0be53e97-364b-4858-830c-69857dfb6ae4%2FSegment7Standard.woff?v=1605129469084')
+    format('woff'),
+    url('https://cdn.glitch.com/0be53e97-364b-4858-830c-69857dfb6ae4%2FSegment7Standard.ttf?v=1605129336868')
+    format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Condensed';
+  src: url('https://cdn.glitch.com/0be53e97-364b-4858-830c-69857dfb6ae4%2FRobotoCondensed-Bold.ttf?v=1605123074176')
+    format('truetype');
+  font-weight: bold;
+}
+
+body {
+  background-color: RGBA(15, 8, 8, 1);
+  color: RGBA(220, 220, 220, 1);
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  font-family: 'Roboto Condensed', 'Helvetica', Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+.clock-face {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-end;
+}
+
+.digit {
+  font-family: 'segment';
+}
+
+.round-number {
+  color: RGBA(136, 204, 69, 1);
+  margin-right: 0.2em;
+}
+
+.number {
+  color: RGBA(255, 25, 30, 1);
+}
+
+.digit,
+.number {
+  font-size: 20vw;
+}
+
+.colon {
+  vertical-align: super;
+}
+
+.start {
+  display: block;
+  padding: 2px;
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  font-size: 1.5vw;
+  justify-content: center;
+  grid-column-gap: 5px;
+  grid-row-gap: 3px;
+}
+
+.control-input {
+  background-color: transparent;
+  background-color: transparent;
+  border-radius: 2px;
+  color: inherit;
+  border: 0.5px solid RGBA(220, 220, 220, 1);
+  font-size: inherit;
+  font-family: inherit;
+}
